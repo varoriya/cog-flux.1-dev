@@ -15,8 +15,14 @@ build:
     - "protobuf==5.27.3"
     - "numpy==1.26.4"
     - "pillow==10.4.0"
+    - "safetensors==0.4.2"  # เพิ่ม safetensors เพื่อโหลดโมเดล
+    - "requests==2.31.0"  # เพิ่ม requests เพื่อโหลดโมเดลจาก Hugging Face
 
   run:
     - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/latest/download/pget_$(uname -s)_$(uname -m)" && chmod +x /usr/local/bin/pget
 
 predict: "predict.py:Predictor"
+
+# กำหนดไฟล์โมเดลที่ต้องใช้
+weights:
+  - "RyuzakiMix_flux_Beta_fp16.safetensors"
