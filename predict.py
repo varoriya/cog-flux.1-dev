@@ -14,8 +14,10 @@ from diffusers.pipelines.stable_diffusion.safety_checker import (
     StableDiffusionSafetyChecker
 )
 
-MODEL_CACHE = "flux.1-lite-8B-alpha"
-MODEL_URL = "https://weights.replicate.delivery/default/freepik/flux.1-lite-8B-alpha/model.tar"
+# MODEL_CACHE = "flux.1-lite-8B-alpha"
+# MODEL_URL = "https://weights.replicate.delivery/default/freepik/flux.1-lite-8B-alpha/model.tar"
+MODEL_CACHE = "RyuzakiMix_flux_Beta_fp16"
+MODEL_URL = "https://huggingface.co/Varoriya/yuzakiflux/resolve/main/RyuzakiMix_flux_Beta_fp16.safetensors"
 SAFETY_CACHE = "safety-cache"
 FEATURE_EXTRACTOR = "/src/feature-extractor"
 SAFETY_URL = "https://weights.replicate.delivery/default/sdxl/safety-1.0.tar"
